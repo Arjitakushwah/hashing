@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -41,9 +42,18 @@ public class hashmap {
         for(String k : keys){
             System.out.println("keys="+k+ ",value="+hash.get(k));
         }
-
+        //doubly linked list is used in linked hashmap 
+        LinkedHashMap<String,Integer> lhm = new LinkedHashMap<>();
+        lhm.put("india", 32);
+        lhm.put("china", 88);
 
         HashSet<Integer> set = new HashSet<>();
-        TreeMap<String,Integer> tree = new TreeMap<>();        
+
+        //sorted keys in treeemap tc=logn
+        //using red black tree
+        TreeMap<String,Integer> tree = new TreeMap<>();       
+        tree.put("India", 65);
+        tree.put("china", 76);
+
     }
 }
